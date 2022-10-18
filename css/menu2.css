@@ -1,0 +1,390 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+.wrapper{
+    width: 1200px;
+    margin: 0 auto;
+    padding: 20px 0;
+    text-align: center;
+    background: yellowgreen;
+}
+
+
+.level1{
+  text-align: center;  
+  background: lightslategray; 
+  font-size: 0;
+  display: inline-block;
+  
+  
+  
+}
+
+
+.level1>li{
+    display: inline-block;
+    font-size: 20px;
+    position: relative;
+    
+    
+  
+}
+
+ul li a{
+    color: black;
+    padding: 10px 20px;
+    display: block;
+    
+}
+
+
+
+.level1 li+li{
+    border-left: 2px solid burlywood;
+}
+
+.level2{
+    position: absolute;
+    top: 100%;
+    margin-top: 10px;
+    left: 0;
+    background: lightslategray;  
+    z-index: 5;
+    display: none;
+}
+
+ .level3{
+    background: lightslategray;  
+    left: 100%;
+    top: 0;
+    position: absolute;
+    display: none;
+}
+
+.level4{
+    background: lightslategray;  
+    bottom: 0;
+    right: 100%;
+    position: absolute;
+    display: none;
+
+}
+ul li:hover ul{
+   display: block;
+}
+
+
+
+ul li :hover{
+    background: blue;
+}
+
+div{
+    display: inline-block;
+    position: relative;
+    
+}
+.menu{
+    background: rebeccapurple;
+    min-height: auto;
+    position: fixed;
+    color: black;
+    left: 0;
+    font-size: 30px;
+    width: 100px;
+    margin-top: -65px;
+    top: 50%;
+    z-index: 2;
+    
+}
+
+a{
+    color: black;
+    font-size: 20px;
+
+}
+ div>p{
+   position: absolute;
+   top: 50%;
+   background: rgba(0, 0, 0, .5);
+   text-align: center;
+   font-size: 50px;
+   margin-top: -25px;
+   left: 0;
+   right: 0;
+   color: azure;
+
+
+ }
+ body{
+    background: orange;
+
+}
+ div{
+    outline: 2px solid black;
+
+ }
+ .inline{
+    font-size: 0;
+ }
+
+.in_t{
+    background: lime;
+    outline: 3px solid black;
+    width: 400px;
+    font-size: 30px;
+    display: inline-block; 
+    
+}
+.in_t2{
+    background: lime;
+    outline: 3px solid black; 
+    width: 800px;
+    font-size: 30px;
+    display: inline-block;
+   
+    
+   
+
+}
+.in_t3{
+    background: lime;
+    outline: 3px solid black; 
+    width: 400px;
+    font-size: 30px;
+    display: inline-block;
+    
+    
+    
+ 
+
+}
+.in_t4{
+    background: lime;
+    outline: 3px solid black; 
+    width: 200px;
+    font-size: 30px;
+    display: inline-block;
+    
+}
+.flex{
+    padding: 30px 0;
+    background: lightgreen;
+    outline: 2px black;
+    display: flex;
+   
+    
+    
+
+}
+ div{
+    outline: 2px solid black;
+ }
+
+.in_flex{
+    background: lime;
+    outline: 3px solid black;
+    flex: 0 1 600px;
+   
+    
+    
+}
+.in_flex2{
+    background: lime;
+    outline: 3px solid black; 
+    flex: 0 1 800px;
+  
+
+    
+   
+
+}
+.in_flex3{
+    background: lime;
+    outline: 3px solid black; 
+    flex: 0 1 400px;
+   
+ 
+
+}
+.in_flex4{
+    background: lime;
+    outline: 3px solid black; 
+    flex: 0 1 200px;
+    }
+
+    .area_teplate{
+        background: yellow;
+        padding: 30px 0;
+        display: grid;
+        grid-template-areas: "A B C";
+                                             
+    }
+     .area_teplate2{
+        background: yellow;
+        padding: 30px 0;
+        display: grid;
+        grid-template-areas: "D E"
+                             "D F"   
+                             "G F" 
+                             "G H"
+                            
+    
+    
+     }
+     .area_teplate3{
+        background: yellow;
+        padding: 30px 0;
+        display: grid;
+        grid-template-areas:"I J J"
+                            "I K L" ;
+     }
+     .area_teplate4{
+        background: yellow;
+        padding: 30px 0;
+        display: grid;
+        grid-template-areas: "M M N"
+                              "O P N"
+                              "Q P N";
+     }
+    
+    div{
+     outline: 2px solid black;
+     background: green;
+    
+    }
+    
+    .area1{
+        grid-area: A;
+    }
+     .area2{
+        grid-area: B;
+     }
+     .area3{
+        grid-area: C;
+     }
+     .area4{
+        grid-area: D;
+     }
+     .area5{
+        grid-area: G;
+     }
+     .area6{
+        grid-area: E;
+     }
+     .area7{
+        grid-area: F;
+     }
+     .area8{
+        grid-area: H;
+     }
+     .area9{
+        grid-area: I;
+     }
+     .area10{
+        grid-area: J;
+     }
+     .area11{
+        grid-area: K;
+     }
+     .area12{
+        grid-area: L;
+     }
+     .area13{
+        grid-area: M;
+     }
+     .area14{
+        grid-area: N;
+     }
+     .area15{
+        grid-area: O;
+     }
+    .area16{
+        grid-area: P;
+    }
+    .area17{
+        grid-area: Q;
+    }
+    .grid{
+        padding: 20px 0;
+        background: aquamarine;
+        outline: 2px black;
+        display: grid;
+        grid-template-columns: 400px auto 400px;
+    
+    }
+    
+    .grid2{
+        padding: 20px 0;
+        background: aquamarine;
+        outline: 2px black;
+        display: grid;
+        grid-template-columns: 800px 400px;
+    }
+    .grid3{
+        padding: 20px 0;
+        background: aquamarine;
+        outline: 2px black;
+        display: grid;
+        grid-template-columns: 400px 800px 400px 400px;
+    }
+    
+    .grid4{
+        padding: 20px 0;
+        background: aquamarine;
+        outline: 2px black;
+        display: grid;
+        grid-template-columns: 800px 400px ;
+    }
+     div{
+        outline: 2px solid black;
+     }
+
+
+     
+     .socialnetworks{
+        
+        font-size: 0;
+     }
+
+     .socialnetworks li{
+        display: inline-block;
+        font-size: 25px;
+     }
+
+     .socialnetworks li a{
+        width: 50px;
+        height: 70px;
+        display: block;
+        background: url("../images/spritecss.png");
+        border: 1px solid black;
+     }
+
+     .socialnetworks li+li a{
+        background-position: -100px 0px;
+     }
+     .socialnetworks li+li+li a{
+      background-position: -200px 0;
+    }
+
+    
+     
